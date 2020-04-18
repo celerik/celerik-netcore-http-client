@@ -2,21 +2,21 @@
 
 <img src="https://celerik.com/wp-content/uploads/2019/12/celerik-1.svg" alt="Celerik" width="300">
 
-# .NET Core Services Library
+# .NET Core HttpClient Library
 
 </div>
 
 ## What's it
 
-*Celerik.NetCore.Services* provides a codebaseline for .NET Core service-oriented project and abstractions for common services like Log, Security, MasterData, Settings. A built-in PayPal service is included as well.
+*Celerik.NetCore.HttpsClient* provides a codebaseline to implement a HttpClient calling a service that follows the Celerik Api Protocol. The protocol is simple: all http body responses have: Data, Message, MessageType and Success.
 
 ## What's next
 
-Check out the road map of *Celerik.NetCore.Services* [here](ROADMAP.md).
+Check out the road map of *Celerik.NetCore.HttpClient* [here](ROADMAP.md).
 
 ## License
 
-*Celerik.NetCore.Services* is licensed under the [MIT license](LICENSE).
+*Celerik.NetCore.HttpClient* is licensed under the [MIT license](LICENSE).
 
 ## How to contribute
 Check out the contributing guide [here](CONTRIBUTING.md).
