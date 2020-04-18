@@ -19,7 +19,7 @@
 ## Quick start
 
 ```
-PM > Install-Package Celerik.NetCore.HtpClient
+PM > Install-Package Celerik.NetCore.HttpClient
 ```
 
 ## API and examples
@@ -38,11 +38,11 @@ PM > Install-Package Celerik.NetCore.HtpClient
 
 ## What's next
 
-Check out the road map of *Celerik.NetCore.HtpClient* [here](ROADMAP.md).
+Check out the road map of *Celerik.NetCore.HttpClient* [here](ROADMAP.md).
 
 ## License
 
-*Celerik.NetCore.HtpClient* is licensed under the [MIT license](LICENSE).
+*Celerik.NetCore.HttpClient* is licensed under the [MIT license](LICENSE).
 
 ## How to contribute
 Check out the contributing guide [here](CONTRIBUTING.md).
