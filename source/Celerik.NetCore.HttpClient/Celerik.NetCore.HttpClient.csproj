@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Authors>Celerik</Authors>
+    <Company>Celerik (IDlink S.A.S.)</Company>
+    <Copyright>Celerik (©) 2020 (MIT)</Copyright>
+    <Description>Provides a codebaseline to implement a HttpClient calling a service that follows the Celerik Api Protocol. The protocol is simple: all http body responses have: Data, Message, MessageType and Success.</Description>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IncludeSymbols>true</IncludeSymbols>
+    <LangVersion>latest</LangVersion>
+    <PackageIcon>Celerik.png</PackageIcon>
+    <PackageId>Celerik.NetCore.HttpClient</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/celerik/celerik-netcore-httpclient</PackageProjectUrl>
+    <PackageReleaseNotes>Created the CelerikHttpClient</PackageReleaseNotes>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageTags>csharp, netcore, visual-studio, http-client, nuget</PackageTags>
+    <RepositoryType>Git</RepositoryType>
+    <RepositoryUrl>https://github.com/celerik/celerik-netcore-httpclient</RepositoryUrl>
+    <SignAssembly>false</SignAssembly>
+    <Summary>Provides a codebaseline to implement a HttpClient calling a service that follows the Celerik Api Protocol. The protocol is simple: all http body responses have: Data, Message, MessageType and Success.</Summary>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Title>Celerik.NetCore.HttpClient</Title>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn />
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\Celerik.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+</Project>

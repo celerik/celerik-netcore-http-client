@@ -1,9 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Celerik.NetCore.Services.Test
+namespace Celerik.NetCore.HttpClient.Test
 {
     [TestClass]
-    public class ApiResponseTest : ServiceBaseTest
+    public class ApiResponseTest
     {
         [TestMethod]
         public void EmptyConstructor()
@@ -42,7 +42,7 @@ namespace Celerik.NetCore.Services.Test
         [TestMethod]
         public void ToStringInfoMessageType()
         {
-            var response = new ApiResponse<object>() { MessageType = ApiMessageType.Info };
+            var response = new ApiResponse<object>() { MessageType = "info" };
             var toString = response.ToString();
 
             Assert.AreEqual(
