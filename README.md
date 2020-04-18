@@ -8,7 +8,7 @@
 [![deploy](https://github.com/celerik/celerik-netcore-httpclient/workflows/deploy/badge.svg)](https://github.com/celerik/celerik-netcore-httpclient/actions?query=workflow%3Adeploy)
 [![documentation](https://github.com/celerik/celerik-netcore-httpclient/workflows/documentation/badge.svg)](https://github.com/celerik/celerik-netcore-httpclient/actions?query=workflow%3Adocumentation)
 [![Coverage Status](https://coveralls.io/repos/github/celerik/celerik-netcore-httpclient/badge.svg)](https://coveralls.io/github/celerik/celerik-netcore-httpclient)
-[![NuGet](https://img.shields.io/nuget/v/Celerik.NetCore.HttpClient.svg)](http://www.nuget.org/packages/Celerik.NetCore.HtpClient/)
+[![NuGet](https://img.shields.io/nuget/v/Celerik.NetCore.HttpClient.svg)](http://www.nuget.org/packages/Celerik.NetCore.HttpClient/)
 
 </div>
 
