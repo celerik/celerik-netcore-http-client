@@ -24,7 +24,7 @@ PM > Install-Package Celerik.NetCore.HttpClient
 
 ## API and examples
 
- - Check out API's documentation [here](https://celerik.github.io/celerik-netcore-httpclient/api/Celerik.NetCore.HtppClient.html).
+ - Check out API's documentation [here](https://celerik.github.io/celerik-netcore-httpclient/api/Celerik.NetCore.HttpClient.html).
  - Check out tutorials on Celerik's blog [here](http://celerik.com).
  
 ## Requirements
