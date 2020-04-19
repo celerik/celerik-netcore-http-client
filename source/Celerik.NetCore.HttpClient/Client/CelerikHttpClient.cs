@@ -15,39 +15,20 @@ namespace Celerik.NetCore.HttpClient
     /// Protocol. The protocol is simple: all http body responses
     /// have: Data, Message, MessageType and Success.
     /// </summary>
-    public class CelerikHttpClient : System.Net.Http.HttpClient
+    public class CelerikHttpClient
     {
+        /// <summary>
+        /// Reference to the current HttpClient.
+        /// </summary>
+        private System.Net.Http.HttpClient _httpClient;
+
         /// <summary>
         /// Initializes a new instance of the class.
         /// </summary>
-        public CelerikHttpClient()
-            : base()
-        {
-        }
-
-        /// <summary>
-        /// Initializes a new instance of the class with a specific
-        /// handler.
-        /// </summary>
-        /// <param name="handler">The HTTP handler stack to use for
-        /// sending requests.</param>
-        public CelerikHttpClient(HttpMessageHandler handler)
-            : base(handler)
-        {
-        }
-
-        /// <summary>
-        /// Initializes a new instance of the class with a specific 
-        /// handler.</summary>
-        /// <param name="handler">The HTTP handler stack to use for
-        /// sending requests.</param>
-        /// <param name="disposeHandler">True if the inner handler should
-        /// be disposed of by Dispose(), false if you intend to reuse the
-        /// inner handler.</param>
-        public CelerikHttpClient(HttpMessageHandler handler, bool disposeHandler)
-            : base(handler, disposeHandler)
-        {
-        }
+        /// <param name="httpClient">Reference to the current
+        /// HttpClient.</param>
+        public CelerikHttpClient(System.Net.Http.HttpClient httpClient)
+            => _httpClient = httpClient;
 
         /// <summary>
         /// Send an HTTP request as an asynchronous operation.
@@ -225,15 +206,15 @@ namespace Celerik.NetCore.HttpClient
 
             if (completionOption == null &&
                 cancellationToken == CancellationToken.None)
-                response = await SendAsync(request);
+                response = await _httpClient.SendAsync(request);
             else if (completionOption != null &&
                 cancellationToken == CancellationToken.None)
-                response = await SendAsync(request, completionOption.Value);
+                response = await _httpClient.SendAsync(request, completionOption.Value);
             else if (completionOption == null &&
                 cancellationToken != CancellationToken.None)
-                response = await SendAsync(request, cancellationToken);
+                response = await _httpClient.SendAsync(request, cancellationToken);
             else
-                response = await SendAsync(request, completionOption.Value, cancellationToken);
+                response = await _httpClient.SendAsync(request, completionOption.Value, cancellationToken);
 
             var content = await response.Content.ReadAsStringAsync();
 
