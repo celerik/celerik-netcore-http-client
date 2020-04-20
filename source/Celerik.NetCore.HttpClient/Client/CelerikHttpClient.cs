@@ -249,9 +249,9 @@ namespace Celerik.NetCore.HttpClient
 
             throw new HttpRequestException(
                 $@"Error calling service: '{0}'.StatusCode: '{1}'.Details: '{2}',
-                request.RequestUri.ToString(),
-                response.StatusCode,
-                content"
+                {request.RequestUri.ToString()},
+                {response.StatusCode},
+                {content}"
             );
         }
 
