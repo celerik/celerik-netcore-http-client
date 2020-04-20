@@ -12,7 +12,7 @@
     <PackageId>Celerik.NetCore.HttpClient</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/celerik/celerik-netcore-httpclient</PackageProjectUrl>
-    <PackageReleaseNotes>Modified CelerikHttpClient constructor</PackageReleaseNotes>
+    <PackageReleaseNotes>Document exceptions</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>csharp, netcore, visual-studio, http-client, nuget</PackageTags>
     <RepositoryType>Git</RepositoryType>
@@ -22,7 +22,7 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Title>Celerik.NetCore.HttpClient</Title>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
