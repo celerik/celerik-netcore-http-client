@@ -44,6 +44,8 @@ namespace Celerik.NetCore.HttpClient
         /// <param name="payload">Arguments of the service.</param>
         /// <returns>The task object representing the asynchronous
         /// operation.</returns>
+        /// <exception cref="HttpRequestException">If there was an error
+        /// calling the service.</exception>
         public async Task<ApiResponse<TOutput>> SendAsync<TOutput>(
             HttpMethod method,
             string controller,
@@ -77,6 +79,8 @@ namespace Celerik.NetCore.HttpClient
         /// <param name="payload">Arguments of the service.</param>
         /// <returns>The task object representing the asynchronous
         /// operation.</returns>
+        /// <exception cref="HttpRequestException">If there was an error
+        /// calling the service.</exception>
         public async Task<ApiResponse<TOutput>> SendAsync<TOutput>(
             HttpMethod method,
             string controller,
@@ -113,6 +117,8 @@ namespace Celerik.NetCore.HttpClient
         /// <param name="payload">Arguments of the service.</param>
         /// <returns>The task object representing the asynchronous
         /// operation.</returns>
+        /// <exception cref="HttpRequestException">If there was an error
+        /// calling the service.</exception>
         public async Task<ApiResponse<TOutput>> SendAsync<TOutput>(
             HttpMethod method,
             string controller,
@@ -147,6 +153,8 @@ namespace Celerik.NetCore.HttpClient
         /// <param name="payload">Arguments of the service.</param>
         /// <returns>The task object representing the asynchronous
         /// operation.</returns>
+        /// <exception cref="HttpRequestException">If there was an error
+        /// calling the service.</exception>
         public async Task<ApiResponse<TOutput>> SendAsync<TOutput>(
             HttpMethod method,
             string controller,
