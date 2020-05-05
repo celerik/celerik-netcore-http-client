@@ -1,0 +1,195 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Celerik.NetCore.HttpClient
+  name: Celerik.NetCore.HttpClient
+  href: api/Celerik.NetCore.HttpClient.html
+  commentId: N:Celerik.NetCore.HttpClient
+  fullName: Celerik.NetCore.HttpClient
+  nameWithType: Celerik.NetCore.HttpClient
+- uid: Celerik.NetCore.HttpClient.ApiMessageType
+  name: ApiMessageType
+  href: api/Celerik.NetCore.HttpClient.ApiMessageType.html
+  commentId: T:Celerik.NetCore.HttpClient.ApiMessageType
+  fullName: Celerik.NetCore.HttpClient.ApiMessageType
+  nameWithType: ApiMessageType
+- uid: Celerik.NetCore.HttpClient.ApiMessageType.Error
+  name: Error
+  href: api/Celerik.NetCore.HttpClient.ApiMessageType.html#Celerik_NetCore_HttpClient_ApiMessageType_Error
+  commentId: F:Celerik.NetCore.HttpClient.ApiMessageType.Error
+  fullName: Celerik.NetCore.HttpClient.ApiMessageType.Error
+  nameWithType: ApiMessageType.Error
+- uid: Celerik.NetCore.HttpClient.ApiMessageType.Info
+  name: Info
+  href: api/Celerik.NetCore.HttpClient.ApiMessageType.html#Celerik_NetCore_HttpClient_ApiMessageType_Info
+  commentId: F:Celerik.NetCore.HttpClient.ApiMessageType.Info
+  fullName: Celerik.NetCore.HttpClient.ApiMessageType.Info
+  nameWithType: ApiMessageType.Info
+- uid: Celerik.NetCore.HttpClient.ApiMessageType.Success
+  name: Success
+  href: api/Celerik.NetCore.HttpClient.ApiMessageType.html#Celerik_NetCore_HttpClient_ApiMessageType_Success
+  commentId: F:Celerik.NetCore.HttpClient.ApiMessageType.Success
+  fullName: Celerik.NetCore.HttpClient.ApiMessageType.Success
+  nameWithType: ApiMessageType.Success
+- uid: Celerik.NetCore.HttpClient.ApiMessageType.Warning
+  name: Warning
+  href: api/Celerik.NetCore.HttpClient.ApiMessageType.html#Celerik_NetCore_HttpClient_ApiMessageType_Warning
+  commentId: F:Celerik.NetCore.HttpClient.ApiMessageType.Warning
+  fullName: Celerik.NetCore.HttpClient.ApiMessageType.Warning
+  nameWithType: ApiMessageType.Warning
+- uid: Celerik.NetCore.HttpClient.ApiResponse`2
+  name: ApiResponse<TData, TStatusCode>
+  href: api/Celerik.NetCore.HttpClient.ApiResponse-2.html
+  commentId: T:Celerik.NetCore.HttpClient.ApiResponse`2
+  name.vb: ApiResponse(Of TData, TStatusCode)
+  fullName: Celerik.NetCore.HttpClient.ApiResponse<TData, TStatusCode>
+  fullName.vb: Celerik.NetCore.HttpClient.ApiResponse(Of TData, TStatusCode)
+  nameWithType: ApiResponse<TData, TStatusCode>
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode)
+- uid: Celerik.NetCore.HttpClient.ApiResponse`2.Data
+  name: Data
+  href: api/Celerik.NetCore.HttpClient.ApiResponse-2.html#Celerik_NetCore_HttpClient_ApiResponse_2_Data
+  commentId: P:Celerik.NetCore.HttpClient.ApiResponse`2.Data
+  fullName: Celerik.NetCore.HttpClient.ApiResponse<TData, TStatusCode>.Data
+  fullName.vb: Celerik.NetCore.HttpClient.ApiResponse(Of TData, TStatusCode).Data
+  nameWithType: ApiResponse<TData, TStatusCode>.Data
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode).Data
+- uid: Celerik.NetCore.HttpClient.ApiResponse`2.Data*
+  name: Data
+  href: api/Celerik.NetCore.HttpClient.ApiResponse-2.html#Celerik_NetCore_HttpClient_ApiResponse_2_Data_
+  commentId: Overload:Celerik.NetCore.HttpClient.ApiResponse`2.Data
+  isSpec: "True"
+  fullName: Celerik.NetCore.HttpClient.ApiResponse<TData, TStatusCode>.Data
+  fullName.vb: Celerik.NetCore.HttpClient.ApiResponse(Of TData, TStatusCode).Data
+  nameWithType: ApiResponse<TData, TStatusCode>.Data
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode).Data
+- uid: Celerik.NetCore.HttpClient.ApiResponse`2.Message
+  name: Message
+  href: api/Celerik.NetCore.HttpClient.ApiResponse-2.html#Celerik_NetCore_HttpClient_ApiResponse_2_Message
+  commentId: P:Celerik.NetCore.HttpClient.ApiResponse`2.Message
+  fullName: Celerik.NetCore.HttpClient.ApiResponse<TData, TStatusCode>.Message
+  fullName.vb: Celerik.NetCore.HttpClient.ApiResponse(Of TData, TStatusCode).Message
+  nameWithType: ApiResponse<TData, TStatusCode>.Message
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode).Message
+- uid: Celerik.NetCore.HttpClient.ApiResponse`2.Message*
+  name: Message
+  href: api/Celerik.NetCore.HttpClient.ApiResponse-2.html#Celerik_NetCore_HttpClient_ApiResponse_2_Message_
+  commentId: Overload:Celerik.NetCore.HttpClient.ApiResponse`2.Message
+  isSpec: "True"
+  fullName: Celerik.NetCore.HttpClient.ApiResponse<TData, TStatusCode>.Message
+  fullName.vb: Celerik.NetCore.HttpClient.ApiResponse(Of TData, TStatusCode).Message
+  nameWithType: ApiResponse<TData, TStatusCode>.Message
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode).Message
+- uid: Celerik.NetCore.HttpClient.ApiResponse`2.MessageType
+  name: MessageType
+  href: api/Celerik.NetCore.HttpClient.ApiResponse-2.html#Celerik_NetCore_HttpClient_ApiResponse_2_MessageType
+  commentId: P:Celerik.NetCore.HttpClient.ApiResponse`2.MessageType
+  fullName: Celerik.NetCore.HttpClient.ApiResponse<TData, TStatusCode>.MessageType
+  fullName.vb: Celerik.NetCore.HttpClient.ApiResponse(Of TData, TStatusCode).MessageType
+  nameWithType: ApiResponse<TData, TStatusCode>.MessageType
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode).MessageType
+- uid: Celerik.NetCore.HttpClient.ApiResponse`2.MessageType*
+  name: MessageType
+  href: api/Celerik.NetCore.HttpClient.ApiResponse-2.html#Celerik_NetCore_HttpClient_ApiResponse_2_MessageType_
+  commentId: Overload:Celerik.NetCore.HttpClient.ApiResponse`2.MessageType
+  isSpec: "True"
+  fullName: Celerik.NetCore.HttpClient.ApiResponse<TData, TStatusCode>.MessageType
+  fullName.vb: Celerik.NetCore.HttpClient.ApiResponse(Of TData, TStatusCode).MessageType
+  nameWithType: ApiResponse<TData, TStatusCode>.MessageType
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode).MessageType
+- uid: Celerik.NetCore.HttpClient.ApiResponse`2.StatusCode
+  name: StatusCode
+  href: api/Celerik.NetCore.HttpClient.ApiResponse-2.html#Celerik_NetCore_HttpClient_ApiResponse_2_StatusCode
+  commentId: P:Celerik.NetCore.HttpClient.ApiResponse`2.StatusCode
+  fullName: Celerik.NetCore.HttpClient.ApiResponse<TData, TStatusCode>.StatusCode
+  fullName.vb: Celerik.NetCore.HttpClient.ApiResponse(Of TData, TStatusCode).StatusCode
+  nameWithType: ApiResponse<TData, TStatusCode>.StatusCode
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode).StatusCode
+- uid: Celerik.NetCore.HttpClient.ApiResponse`2.StatusCode*
+  name: StatusCode
+  href: api/Celerik.NetCore.HttpClient.ApiResponse-2.html#Celerik_NetCore_HttpClient_ApiResponse_2_StatusCode_
+  commentId: Overload:Celerik.NetCore.HttpClient.ApiResponse`2.StatusCode
+  isSpec: "True"
+  fullName: Celerik.NetCore.HttpClient.ApiResponse<TData, TStatusCode>.StatusCode
+  fullName.vb: Celerik.NetCore.HttpClient.ApiResponse(Of TData, TStatusCode).StatusCode
+  nameWithType: ApiResponse<TData, TStatusCode>.StatusCode
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode).StatusCode
+- uid: Celerik.NetCore.HttpClient.ApiResponse`2.Success
+  name: Success
+  href: api/Celerik.NetCore.HttpClient.ApiResponse-2.html#Celerik_NetCore_HttpClient_ApiResponse_2_Success
+  commentId: P:Celerik.NetCore.HttpClient.ApiResponse`2.Success
+  fullName: Celerik.NetCore.HttpClient.ApiResponse<TData, TStatusCode>.Success
+  fullName.vb: Celerik.NetCore.HttpClient.ApiResponse(Of TData, TStatusCode).Success
+  nameWithType: ApiResponse<TData, TStatusCode>.Success
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode).Success
+- uid: Celerik.NetCore.HttpClient.ApiResponse`2.Success*
+  name: Success
+  href: api/Celerik.NetCore.HttpClient.ApiResponse-2.html#Celerik_NetCore_HttpClient_ApiResponse_2_Success_
+  commentId: Overload:Celerik.NetCore.HttpClient.ApiResponse`2.Success
+  isSpec: "True"
+  fullName: Celerik.NetCore.HttpClient.ApiResponse<TData, TStatusCode>.Success
+  fullName.vb: Celerik.NetCore.HttpClient.ApiResponse(Of TData, TStatusCode).Success
+  nameWithType: ApiResponse<TData, TStatusCode>.Success
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode).Success
+- uid: Celerik.NetCore.HttpClient.CelerikHttpClient
+  name: CelerikHttpClient
+  href: api/Celerik.NetCore.HttpClient.CelerikHttpClient.html
+  commentId: T:Celerik.NetCore.HttpClient.CelerikHttpClient
+  fullName: Celerik.NetCore.HttpClient.CelerikHttpClient
+  nameWithType: CelerikHttpClient
+- uid: Celerik.NetCore.HttpClient.CelerikHttpClient.#ctor(System.Net.Http.HttpClient)
+  name: CelerikHttpClient(Net.Http.HttpClient)
+  href: api/Celerik.NetCore.HttpClient.CelerikHttpClient.html#Celerik_NetCore_HttpClient_CelerikHttpClient__ctor_System_Net_Http_HttpClient_
+  commentId: M:Celerik.NetCore.HttpClient.CelerikHttpClient.#ctor(System.Net.Http.HttpClient)
+  fullName: Celerik.NetCore.HttpClient.CelerikHttpClient.CelerikHttpClient(System.Net.Http.HttpClient)
+  nameWithType: CelerikHttpClient.CelerikHttpClient(Net.Http.HttpClient)
+- uid: Celerik.NetCore.HttpClient.CelerikHttpClient.#ctor*
+  name: CelerikHttpClient
+  href: api/Celerik.NetCore.HttpClient.CelerikHttpClient.html#Celerik_NetCore_HttpClient_CelerikHttpClient__ctor_
+  commentId: Overload:Celerik.NetCore.HttpClient.CelerikHttpClient.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.HttpClient.CelerikHttpClient.CelerikHttpClient
+  nameWithType: CelerikHttpClient.CelerikHttpClient
+- uid: Celerik.NetCore.HttpClient.CelerikHttpClient.SendAsync*
+  name: SendAsync
+  href: api/Celerik.NetCore.HttpClient.CelerikHttpClient.html#Celerik_NetCore_HttpClient_CelerikHttpClient_SendAsync_
+  commentId: Overload:Celerik.NetCore.HttpClient.CelerikHttpClient.SendAsync
+  isSpec: "True"
+  fullName: Celerik.NetCore.HttpClient.CelerikHttpClient.SendAsync
+  nameWithType: CelerikHttpClient.SendAsync
+- uid: Celerik.NetCore.HttpClient.CelerikHttpClient.SendAsync``2(HttpMethod,System.String,System.String,CancellationToken,System.Object)
+  name: SendAsync<TData, TStatusCode>(HttpMethod, String, String, CancellationToken, Object)
+  href: api/Celerik.NetCore.HttpClient.CelerikHttpClient.html#Celerik_NetCore_HttpClient_CelerikHttpClient_SendAsync__2_HttpMethod_System_String_System_String_CancellationToken_System_Object_
+  commentId: M:Celerik.NetCore.HttpClient.CelerikHttpClient.SendAsync``2(HttpMethod,System.String,System.String,CancellationToken,System.Object)
+  name.vb: SendAsync(Of TData, TStatusCode)(HttpMethod, String, String, CancellationToken, Object)
+  fullName: Celerik.NetCore.HttpClient.CelerikHttpClient.SendAsync<TData, TStatusCode>(HttpMethod, System.String, System.String, CancellationToken, System.Object)
+  fullName.vb: Celerik.NetCore.HttpClient.CelerikHttpClient.SendAsync(Of TData, TStatusCode)(HttpMethod, System.String, System.String, CancellationToken, System.Object)
+  nameWithType: CelerikHttpClient.SendAsync<TData, TStatusCode>(HttpMethod, String, String, CancellationToken, Object)
+  nameWithType.vb: CelerikHttpClient.SendAsync(Of TData, TStatusCode)(HttpMethod, String, String, CancellationToken, Object)
+- uid: Celerik.NetCore.HttpClient.CelerikHttpClient.SendAsync``2(HttpMethod,System.String,System.String,HttpCompletionOption,CancellationToken,System.Object)
+  name: SendAsync<TData, TStatusCode>(HttpMethod, String, String, HttpCompletionOption, CancellationToken, Object)
+  href: api/Celerik.NetCore.HttpClient.CelerikHttpClient.html#Celerik_NetCore_HttpClient_CelerikHttpClient_SendAsync__2_HttpMethod_System_String_System_String_HttpCompletionOption_CancellationToken_System_Object_
+  commentId: M:Celerik.NetCore.HttpClient.CelerikHttpClient.SendAsync``2(HttpMethod,System.String,System.String,HttpCompletionOption,CancellationToken,System.Object)
+  name.vb: SendAsync(Of TData, TStatusCode)(HttpMethod, String, String, HttpCompletionOption, CancellationToken, Object)
+  fullName: Celerik.NetCore.HttpClient.CelerikHttpClient.SendAsync<TData, TStatusCode>(HttpMethod, System.String, System.String, HttpCompletionOption, CancellationToken, System.Object)
+  fullName.vb: Celerik.NetCore.HttpClient.CelerikHttpClient.SendAsync(Of TData, TStatusCode)(HttpMethod, System.String, System.String, HttpCompletionOption, CancellationToken, System.Object)
+  nameWithType: CelerikHttpClient.SendAsync<TData, TStatusCode>(HttpMethod, String, String, HttpCompletionOption, CancellationToken, Object)
+  nameWithType.vb: CelerikHttpClient.SendAsync(Of TData, TStatusCode)(HttpMethod, String, String, HttpCompletionOption, CancellationToken, Object)
+- uid: Celerik.NetCore.HttpClient.CelerikHttpClient.SendAsync``2(HttpMethod,System.String,System.String,HttpCompletionOption,System.Object)
+  name: SendAsync<TData, TStatusCode>(HttpMethod, String, String, HttpCompletionOption, Object)
+  href: api/Celerik.NetCore.HttpClient.CelerikHttpClient.html#Celerik_NetCore_HttpClient_CelerikHttpClient_SendAsync__2_HttpMethod_System_String_System_String_HttpCompletionOption_System_Object_
+  commentId: M:Celerik.NetCore.HttpClient.CelerikHttpClient.SendAsync``2(HttpMethod,System.String,System.String,HttpCompletionOption,System.Object)
+  name.vb: SendAsync(Of TData, TStatusCode)(HttpMethod, String, String, HttpCompletionOption, Object)
+  fullName: Celerik.NetCore.HttpClient.CelerikHttpClient.SendAsync<TData, TStatusCode>(HttpMethod, System.String, System.String, HttpCompletionOption, System.Object)
+  fullName.vb: Celerik.NetCore.HttpClient.CelerikHttpClient.SendAsync(Of TData, TStatusCode)(HttpMethod, System.String, System.String, HttpCompletionOption, System.Object)
+  nameWithType: CelerikHttpClient.SendAsync<TData, TStatusCode>(HttpMethod, String, String, HttpCompletionOption, Object)
+  nameWithType.vb: CelerikHttpClient.SendAsync(Of TData, TStatusCode)(HttpMethod, String, String, HttpCompletionOption, Object)
+- uid: Celerik.NetCore.HttpClient.CelerikHttpClient.SendAsync``2(HttpMethod,System.String,System.String,System.Object)
+  name: SendAsync<TData, TStatusCode>(HttpMethod, String, String, Object)
+  href: api/Celerik.NetCore.HttpClient.CelerikHttpClient.html#Celerik_NetCore_HttpClient_CelerikHttpClient_SendAsync__2_HttpMethod_System_String_System_String_System_Object_
+  commentId: M:Celerik.NetCore.HttpClient.CelerikHttpClient.SendAsync``2(HttpMethod,System.String,System.String,System.Object)
+  name.vb: SendAsync(Of TData, TStatusCode)(HttpMethod, String, String, Object)
+  fullName: Celerik.NetCore.HttpClient.CelerikHttpClient.SendAsync<TData, TStatusCode>(HttpMethod, System.String, System.String, System.Object)
+  fullName.vb: Celerik.NetCore.HttpClient.CelerikHttpClient.SendAsync(Of TData, TStatusCode)(HttpMethod, System.String, System.String, System.Object)
+  nameWithType: CelerikHttpClient.SendAsync<TData, TStatusCode>(HttpMethod, String, String, Object)
+  nameWithType.vb: CelerikHttpClient.SendAsync(Of TData, TStatusCode)(HttpMethod, String, String, Object)
