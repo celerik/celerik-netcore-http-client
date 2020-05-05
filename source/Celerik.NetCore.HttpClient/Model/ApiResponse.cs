@@ -1,44 +1,43 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using Newtonsoft.Json;
 
 namespace Celerik.NetCore.HttpClient
 {
     /// <summary>
-    /// Defines the standarized response for all services.
+    /// Defines the standard response for all services.
     /// </summary>
-    /// <typeparam name="TData">Type of the Data property.</typeparam>
-    public class ApiResponse<TData>
+    /// <typeparam name="TData">Type of the Data property.
+    /// </typeparam>
+    /// <typeparam name="TStatusCode">Type of the StatusCode poperty.
+    /// </typeparam>
+    public class ApiResponse<TData, TStatusCode>
+        where TData : class
+        where TStatusCode : struct, IConvertible
     {
         /// <summary>
-        /// Initializes a new instance of the class.
-        /// </summary>
-        /// <param name="data">Data sent as the response.</param>
-        public ApiResponse(TData data = default)
-            => Data = data;
-
-        /// <summary>
-        /// Data sent as the response.
+        /// Data sent in the response.
         /// </summary>
         public TData Data { get; set; }
 
         /// <summary>
-        /// Optional message in case something happened during the service execution.
+        /// Indicates whether the service ran successfully.
+        /// </summary>
+        public bool Success { get; set; }
+
+        /// <summary>
+        /// An optional localized message describing the execution
+        /// of the service.
         /// </summary>
         public string Message { get; set; }
 
         /// <summary>
-        /// Describes the type of message.
+        /// Describes the type of message, null if there is no message.
         /// </summary>
-        public string MessageType { get; set; }
+        public ApiMessageType? MessageType { get; set; }
 
         /// <summary>
-        /// Indicates whether the service was successfully executed.
+        /// The status code related to service execution (enumeration).
         /// </summary>
-        public bool Success { get; set; } = true;
-
-        /// <summary>
-        /// Returns a JSON string that represents the current object.
-        /// </summary>
-        /// <returns>JSON string that represents the current object.</returns>
-        public override string ToString() => JsonConvert.SerializeObject(this);
+        public TStatusCode StatusCode { get; set; }
     }
 }

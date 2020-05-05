@@ -12,7 +12,7 @@
     <PackageId>Celerik.NetCore.HttpClient</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/celerik/celerik-netcore-httpclient</PackageProjectUrl>
-    <PackageReleaseNotes>Fixed exception handling in the HttpClient</PackageReleaseNotes>
+    <PackageReleaseNotes>Updated ApiResponse model</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>csharp, netcore, visual-studio, http-client, nuget</PackageTags>
     <RepositoryType>Git</RepositoryType>
@@ -22,7 +22,7 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Title>Celerik.NetCore.HttpClient</Title>
-    <Version>1.0.4</Version>
+    <Version>2.5.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
