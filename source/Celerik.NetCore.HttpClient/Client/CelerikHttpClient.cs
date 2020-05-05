@@ -31,10 +31,12 @@ namespace Celerik.NetCore.HttpClient
             => _httpClient = httpClient;
 
         /// <summary>
-        /// Send an HTTP request as an asynchronous operation.
+        /// Sends an HTTP request as an asynchronous operation.
         /// </summary>
-        /// <typeparam name="TOutput">The type of the Data property
-        /// in the ApiResponse.</typeparam>
+        /// <typeparam name="TData">Type of the Data property.
+        /// </typeparam>
+        /// <typeparam name="TStatusCode">Type of the StatusCode poperty.
+        /// </typeparam>
         /// <param name="method">The Http Method: DELETE, GET, POST, PUT.
         /// </param>
         /// <param name="controller">The name of the controller this
@@ -46,13 +48,15 @@ namespace Celerik.NetCore.HttpClient
         /// operation.</returns>
         /// <exception cref="HttpRequestException">If there was an error
         /// calling the service.</exception>
-        public async Task<ApiResponse<TOutput>> SendAsync<TOutput>(
+        public async Task<ApiResponse<TData, TStatusCode>> SendAsync<TData, TStatusCode>(
             HttpMethod method,
             string controller,
             string endpoint,
             object payload = null)
+                where TData : class
+                where TStatusCode : struct, IConvertible
         {
-            return await SendAsync<TOutput>(
+            return await SendAsync<TData, TStatusCode>(
                 method,
                 controller,
                 endpoint,
@@ -63,10 +67,12 @@ namespace Celerik.NetCore.HttpClient
         }
 
         /// <summary>
-        /// Send an HTTP request as an asynchronous operation.
+        /// Sends an HTTP request as an asynchronous operation.
         /// </summary>
-        /// <typeparam name="TOutput">The type of the Data property
-        /// in the ApiResponse.</typeparam>
+        /// <typeparam name="TData">Type of the Data property.
+        /// </typeparam>
+        /// <typeparam name="TStatusCode">Type of the StatusCode poperty.
+        /// </typeparam>
         /// <param name="method">The Http Method: DELETE, GET, POST, PUT.
         /// </param>
         /// <param name="controller">The name of the controller this
@@ -81,14 +87,16 @@ namespace Celerik.NetCore.HttpClient
         /// operation.</returns>
         /// <exception cref="HttpRequestException">If there was an error
         /// calling the service.</exception>
-        public async Task<ApiResponse<TOutput>> SendAsync<TOutput>(
+        public async Task<ApiResponse<TData, TStatusCode>> SendAsync<TData, TStatusCode>(
             HttpMethod method,
             string controller,
             string endpoint,
             HttpCompletionOption completionOption,
             object payload = null)
+                where TData : class
+                where TStatusCode : struct, IConvertible
         {
-            return await SendAsync<TOutput>(
+            return await SendAsync<TData, TStatusCode>(
                 method,
                 controller,
                 endpoint,
@@ -99,10 +107,12 @@ namespace Celerik.NetCore.HttpClient
         }
 
         /// <summary>
-        /// Send an HTTP request as an asynchronous operation.
+        /// Sends an HTTP request as an asynchronous operation.
         /// </summary>
-        /// <typeparam name="TOutput">The type of the Data property
-        /// in the ApiResponse.</typeparam>
+        /// <typeparam name="TData">Type of the Data property.
+        /// </typeparam>
+        /// <typeparam name="TStatusCode">Type of the StatusCode poperty.
+        /// </typeparam>
         /// <param name="method">The Http Method: DELETE, GET, POST, PUT.
         /// </param>
         /// <param name="controller">The name of the controller this
@@ -119,15 +129,17 @@ namespace Celerik.NetCore.HttpClient
         /// operation.</returns>
         /// <exception cref="HttpRequestException">If there was an error
         /// calling the service.</exception>
-        public async Task<ApiResponse<TOutput>> SendAsync<TOutput>(
+        public async Task<ApiResponse<TData, TStatusCode>> SendAsync<TData, TStatusCode>(
             HttpMethod method,
             string controller,
             string endpoint,
             HttpCompletionOption completionOption,
             CancellationToken cancellationToken,
             object payload = null)
+                where TData : class
+                where TStatusCode : struct, IConvertible
         {
-            return await SendAsync<TOutput>(
+            return await SendAsync<TData, TStatusCode>(
                 method,
                 controller,
                 endpoint,
@@ -138,10 +150,12 @@ namespace Celerik.NetCore.HttpClient
         }
 
         /// <summary>
-        /// Send an HTTP request as an asynchronous operation.
+        /// Sends an HTTP request as an asynchronous operation.
         /// </summary>
-        /// <typeparam name="TOutput">The type of the Data property
-        /// in the ApiResponse.</typeparam>
+        /// <typeparam name="TData">Type of the Data property.
+        /// </typeparam>
+        /// <typeparam name="TStatusCode">Type of the StatusCode poperty.
+        /// </typeparam>
         /// <param name="method">The Http Method: DELETE, GET, POST, PUT.
         /// </param>
         /// <param name="controller">The name of the controller this
@@ -155,14 +169,16 @@ namespace Celerik.NetCore.HttpClient
         /// operation.</returns>
         /// <exception cref="HttpRequestException">If there was an error
         /// calling the service.</exception>
-        public async Task<ApiResponse<TOutput>> SendAsync<TOutput>(
+        public async Task<ApiResponse<TData, TStatusCode>> SendAsync<TData, TStatusCode>(
             HttpMethod method,
             string controller,
             string endpoint,
             CancellationToken cancellationToken,
             object payload = null)
+                where TData : class
+                where TStatusCode : struct, IConvertible
         {
-            return await SendAsync<TOutput>(
+            return await SendAsync<TData, TStatusCode>(
                 method,
                 controller,
                 endpoint,
@@ -173,10 +189,12 @@ namespace Celerik.NetCore.HttpClient
         }
 
         /// <summary>
-        /// Send an HTTP request as an asynchronous operation.
+        /// Sends an HTTP request as an asynchronous operation.
         /// </summary>
-        /// <typeparam name="TOutput">The type of the Data property
-        /// in the ApiResponse.</typeparam>
+        /// <typeparam name="TData">Type of the Data property.
+        /// </typeparam>
+        /// <typeparam name="TStatusCode">Type of the StatusCode poperty.
+        /// </typeparam>
         /// <param name="method">The Http Method: DELETE, GET, POST, PUT.
         /// </param>
         /// <param name="controller">The name of the controller this
@@ -193,13 +211,15 @@ namespace Celerik.NetCore.HttpClient
         /// operation.</returns>
         /// <exception cref="HttpRequestException">If there was an error
         /// calling the service.</exception>
-        private async Task<ApiResponse<TOutput>> SendAsync<TOutput>(
+        private async Task<ApiResponse<TData, TStatusCode>> SendAsync<TData, TStatusCode>(
             HttpMethod method,
             string controller,
             string endpoint,
             HttpCompletionOption? completionOption,
             CancellationToken cancellationToken,
             object payload)
+                where TData : class
+                where TStatusCode : struct, IConvertible
         {
             var url = GetUrl(method, controller, endpoint, payload);
             using var request = new HttpRequestMessage(method, url);
@@ -230,7 +250,7 @@ namespace Celerik.NetCore.HttpClient
 
             if (response.StatusCode == HttpStatusCode.OK)
             {
-                var obj = JsonConvert.DeserializeObject<ApiResponse<TOutput>>(content);
+                var obj = JsonConvert.DeserializeObject<ApiResponse<TData, TStatusCode>>(content);
                 return obj;
             }
             else if (response.StatusCode == HttpStatusCode.BadRequest)
@@ -238,11 +258,11 @@ namespace Celerik.NetCore.HttpClient
                 if (IsInvalidModelState(content))
                     content = GetFirstMessage(content);
 
-                return new ApiResponse<TOutput>
+                return new ApiResponse<TData, TStatusCode>
                 {
                     Data = default,
                     Message = content,
-                    MessageType = "error",
+                    MessageType = ApiMessageType.Error,
                     Success = false
                 };
             }

@@ -2,53 +2,24 @@
 
 namespace Celerik.NetCore.HttpClient.Test
 {
+    public enum StatusCode
+    {
+        Ok = 200,
+        Error = 500
+    };
+
     [TestClass]
     public class ApiResponseTest
     {
         [TestMethod]
-        public void EmptyConstructor()
+        public void Defaults()
         {
-            var response = new ApiResponse<object>();
+            var response = new ApiResponse<object, StatusCode>();
 
             Assert.AreEqual(null, response.Data);
             Assert.AreEqual(null, response.Message);
             Assert.AreEqual(null, response.MessageType);
-            Assert.AreEqual(true, response.Success);
-        }
-
-        [TestMethod]
-        public void FillConstructor()
-        {
-            var response = new ApiResponse<object>("Chuck Norris knows Victoria's secret");
-
-            Assert.AreEqual("Chuck Norris knows Victoria's secret", response.Data);
-            Assert.AreEqual(null, response.Message);
-            Assert.AreEqual(null, response.MessageType);
-            Assert.AreEqual(true, response.Success);
-        }
-
-        [TestMethod]
-        public void ToStringNullMessageType()
-        {
-            var response = new ApiResponse<object>();
-            var toString = response.ToString();
-
-            Assert.AreEqual(
-                "{\"Data\":null,\"Message\":null,\"MessageType\":null,\"Success\":true}",
-                toString
-            );
-        }
-
-        [TestMethod]
-        public void ToStringInfoMessageType()
-        {
-            var response = new ApiResponse<object>() { MessageType = "info" };
-            var toString = response.ToString();
-
-            Assert.AreEqual(
-                "{\"Data\":null,\"Message\":null,\"MessageType\":\"info\",\"Success\":true}",
-                toString
-            );
+            Assert.AreEqual(false, response.Success);
         }
     }
 }
